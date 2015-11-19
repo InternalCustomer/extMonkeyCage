@@ -25,5 +25,5 @@ app.use(express.static(__dirname + '/public'));
 app.listen(3000, function() {
 
 	// print a message when the server starts listening
-  console.log("server starting";
+  console.log("server starting");
 });
