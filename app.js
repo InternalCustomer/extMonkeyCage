@@ -10,7 +10,7 @@ var express = require('express');
 
 // cfenv provides access to your Cloud Foundry environment
 // for more info, see: https://www.npmjs.com/package/cfenv
-var cfenv = require('cfenv');
+//var cfenv = require('cfenv');
 
 // create a new express server
 var app = express();
@@ -21,9 +21,9 @@ app.use(express.static(__dirname + '/public'));
 // get the app environment from Cloud Foundry
 //var appEnv = cfenv.getAppEnv();
 
-// start server on the specified port and binding host
-app.listen(3000, function() {
 
-	// print a message when the server starts listening
-  console.log("server starting");
+var appport = process.env.VCAP_APP_PORT || 3000;
+var host = (process.env.VCAP_APP_HOST || 'localhost');
+var server = app.listen(appport, function () {
+    console.log('App listening at http://'+host+':'+appport);
 });

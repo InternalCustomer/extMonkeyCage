@@ -1,15 +1,14 @@
-# Node.js Starter Application
+# Node.js Test Application for Chaos Monkey
 
-Bluemix provides a Node.js starter application as a template so that you can
-add your code and push the changes back to the Bluemix environment.
+This is a sample application used from Internal Customer Squad to use Chaos Monkey Bluemix service.
 
 ## Files
 
-The Node.js starter application has files as below:
+The application has files as below:
 
 * app.js
 
-	This file contains the server side JavaScript code for your application
+	This file contains the server side JavaScript code for MonkeyCage application
 	written using the express server package.
 
 * public/
@@ -19,7 +18,7 @@ The Node.js starter application has files as below:
 
 * package.json
 
-	This file contains metadata about your application, that is used by both
+	This file contains metadata about the application, that is used by both
 	the `npm` program to install packages, but also Bluemix when it's
-	staging your application.  For more information, see:
+	staging the application.  For more information, see:
 	<https://docs.npmjs.com/files/package.json>
