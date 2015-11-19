@@ -1,4 +1,4 @@
-FROM registry.ng.bluemix.net/ibmnode:latest
+FROM registry.stage1.ng.bluemix.net/ibmnode:latest
 
 #RUN mkdir MonkeyCage
 RUN mkdir /public
