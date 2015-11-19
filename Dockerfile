@@ -7,7 +7,7 @@ RUN mkdir /public
 ADD *.yml /
 ADD *.js /
 ADD *.json /
-ADD public/* /public/
+ADD public /public/
 #ADD MonkeyCage/node_modules/*.tar.gz /MonkeyCage/node_modules/
 
 
