@@ -1,0 +1,4 @@
+cf api https://api.stage1.ng.bluemix.net
+cf login -u valentina.martucci@it.ibm.com -o AlchemyStaging -s InternalCustomer
+
+cf push MonkeyCage
